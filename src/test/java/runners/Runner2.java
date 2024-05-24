@@ -1,4 +1,4 @@
-package migros.runners;
+package runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 
         plugin = "html:raporlar/CucumberRaporlarim.html",
         features = "src/test/resources/features",
-        glue = {"migros/stepdefs", "migros/hooks"},
-        tags = "@migrosyemekpassed",
+        glue = {"java/stepdefs", "java/hooks"},
+        tags = "@aa",
         dryRun = false,
         monochrome = true
 

@@ -1,4 +1,4 @@
-package team12.utilities;
+package utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

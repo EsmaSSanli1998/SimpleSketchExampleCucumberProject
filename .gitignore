@@ -36,3 +36,11 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+
+
+TestOutput/
+
+.idea/workspace.xml
+
+.idea

@@ -1,12 +1,10 @@
-package team12.utilities;
+package utilities;
 
 import org.apache.commons.io.FileUtils;
-import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import team12.pages.US06_US07_US03Pages;
 
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
@@ -18,8 +16,6 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import static org.junit.Assert.assertTrue;
 
 public class ReusableMethods {
 
@@ -218,13 +214,5 @@ public class ReusableMethods {
     }
 
 
-
-
-    public static void bekleveclick (){
-        ReusableMethods.click(US06_US07_US03Pages.login);
-        ReusableMethods.bekle(3);
-
-    }
-
-  }
+}
 
