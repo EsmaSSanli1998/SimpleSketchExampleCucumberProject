@@ -27,7 +27,6 @@ public class ReusableMethods {
             throw new RuntimeException(e);
         }
     }
-
     //Alert ACCEPT
     public static void alertAccept() {
         Driver.getDriver().switchTo().alert().accept();

@@ -10,20 +10,14 @@ import utilities.Driver;
 
 import java.time.Duration;
 
-import static base_url.baseurl.setup;
-
 public class Hooks {
-
     @Before
     public void beforeApi() {
-        setup();
-
         Driver.getDriver().get(ConfigReader.getProperty("manage_Url"));
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         Driver.getDriver().manage().window().maximize();
     }
-
-   @After
+    @After
     public void tearDown(Scenario scenario) throws Exception {
         if (scenario.isFailed()) {
              TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
@@ -31,7 +25,4 @@ public class Hooks {
             Driver.closeDriver();
          }
     }
-
-
-
 }
